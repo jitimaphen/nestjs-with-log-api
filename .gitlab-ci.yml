@@ -1,0 +1,16 @@
+include:
+  - project: "opstella-ci/pipeline-template"
+    ref: main
+    file: "/pipelines/opstella/template.yml"
+
+variables:
+  SONARQUBE_SCAN_DISABLED: "false"
+  SONARQUBE_ALLOW_FAILURE: "true" # Set when SONARQUBE_SCAN_DISABLED is `true`, Ignore failed entry
+
+  BASE_TEST_IMAGE: ""
+  BASE_TEST_IMAGE_TAG: ""
+  # REPORT_PATH: "$CI_PROJECT_DIR/source/coverage"
+  # REPORT_FILE: "lcov.info"
+
+  SONARQUBE_SCAN_SOURCE_CODE_TARGET: "./source"
+  SONARQUBE_REPORT_PATH_FORMAT: "Dsonar.javascript.lcov.reportPaths"
