@@ -40,6 +40,7 @@ for deploy with volumeMounts, secret, env
 
 ## Detail Api
 
+- / -> GET method
 - /api -> GET method
 - /api/plus -> POST method
   - body : { a: int, b: int }
