@@ -1,7 +1,7 @@
 #volumeMounts:
 #  - name: volume-secret-name
-#    mountPath: /etc/config/secret/opstella.txt
-#    subPath: opstella.txt
+#    mountPath: /etc/config/secret/xxxx.txt
+#    subPath: xxxx.txt
 #
 #volumes: true
 #volumesSecret:
