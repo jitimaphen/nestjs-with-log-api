@@ -1,0 +1,17 @@
+version: "3.9"
+
+networks:
+  worker-application_default:
+
+services:
+  nestjs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nestjs
+    volumes:
+      - ./source:/opt/app/api
+    ports:
+      - "3000:3000"
+    networks:
+      - worker-application_default
